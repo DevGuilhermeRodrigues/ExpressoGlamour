@@ -13,9 +13,6 @@ html, body {
 }
 
 .container-header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -26,7 +23,6 @@ html, body {
 }
 
 .logo {
-    /* color: #FFEDFA; */
     color: black;
     font-size: 20px;
 }
@@ -49,6 +45,78 @@ html, body {
 .navigation-list li a {
     color: #FFEDFA;
     font-size: 20px;
+}
+
+/* estilização main */
+.container-principal {
+    display: flex;
+    justify-content: last baseline;
+    align-items: center;
+    height: 90vh;
+    background-color: #f0eff3;
+    background-image: url("https://img.freepik.com/fotos-premium/retrato-mujer-negra-belleza-cabello-rizado_633478-2349.jpg");
+    background-size: contain; /* Ajusta o tamanho da imagem */
+    background-position: center right; /* Move a imagem para a direita */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.box-conteudo {
+    width: 60%;
+    padding: 0 10%;
+    height: 40vh;
+}
+
+.box-conteudo h2 {
+    font-weight: 400;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.title-principal {
+    font-size: 60px;
+    letter-spacing: 8px;
+    font-weight: 300;
+    text-transform: uppercase;
+    /* margin: 0 0 .6em 0; */
+}
+
+.box-conteudo p {
+    font-size: 19px;
+    margin: 20px 0;
+}
+
+.box-conteudo a {
+    display: block;
+    background-color: #E53888;
+    width: fit-content;
+    padding: .5em 1em;
+    color: white;
+    font-size: 25px;
+}
+
+.box-conteudo a:hover {
+    color: black;
+    border: 1px solid;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 1000px){
+  .container-principal {
+    background-image: none;
+    background-color: #f0eff3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-conteudo {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 850px){
@@ -92,5 +160,4 @@ html, body {
     .navigation-list li a:hover {
         color: black;
     }
-
 }
