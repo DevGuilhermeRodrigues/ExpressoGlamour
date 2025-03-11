@@ -78,7 +78,7 @@ html, body {
     letter-spacing: 8px;
     font-weight: 300;
     text-transform: uppercase;
-    /* margin: 0 0 .6em 0; */
+    color: #E53888;
 }
 
 .box-conteudo p {
@@ -219,12 +219,13 @@ html, body {
 }
 
 .card-services {
-    width: 15%;
+    width: 40vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding-bottom: 1em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 30vh;
 }
 
 .img-card-service {
@@ -279,7 +280,41 @@ footer span a {
 }
 
 /* Responsividade */
-@media (max-width: 1000px){
+@media (max-width: 1100px) {
+    .seconde_box_salao {
+       align-items: center;
+    }
+
+    .container-box p {
+        font-size: 18px;
+    }
+
+    .container-box a {
+        font-size: 16px;
+        padding: .4em 1.3em;
+    }
+
+    .image-salao {
+        width: 400px;
+    }
+
+    /* card services */
+    .container_card-services h2 {
+      font-size: 2.5em;
+    }
+
+    .card-services {
+        width: 25%;
+    }
+
+    .btn-services {
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+}
+
+
+@media  (max-width: 1000px){
   .container-principal {
     background-image: none;
     background-color: #f0f0f0;
@@ -307,8 +342,31 @@ footer span a {
   .link_principal {
     font-size: 20px;
   }
+  
+  /* card salão */
+  .box-description {
+    width: 40%;
+  }
+   
+  .box-description p {
+    font-size: 1em;
+  }
+
 }
 
+@media (max-width: 980px) {
+    .seconde_box_salao {
+        flex-direction: column;
+    }
+
+    .box_salao-img {
+        justify-content: center;
+    }
+
+    .image-salao {
+        width: 80%;
+    }
+}
 
 @media (max-width: 850px){
     .container-header {
@@ -350,5 +408,87 @@ footer span a {
 
     .navigation-list li a:hover {
         color: black;
+    }
+
+    /* container salao */
+    .seconde_box_salao {
+        flex-direction: column;
+        justify-content: flex-start; 
+    }
+
+    .container-box p {
+        font-size: 1.1em;
+    }
+
+    .box_salao-img {
+        justify-content: center;
+    }
+
+    .box_salao-img img {
+        width: 100%;
+        height: 55vh;
+    }
+
+    .image-salao {
+        /* margin-right: auto; */
+        width: 100%;
+        height: 60vh;
+    }
+
+    /* card services */
+    .card-services {
+        width: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+    /* body, html {
+        background-color: aqua;
+    } */
+
+    .first_box_salao img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .box-description-title {
+        font-size: 1.8em;
+    }
+
+    .box-description-sub-title {
+        font-size: 1em;
+    }
+
+    .box-description p {
+        font-size: .9em;
+    }
+
+    .container-box p {
+        font-size: 1em;
+    }
+
+    /* card services */
+    .box_card-services {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_card-services h2 {
+        font-size: 2em;
+    }
+
+    .card-services {
+        width: 50vh;
+        text-align: center;
+    }
+
+    .card-services p {
+        font-size: 1.3em;
+    }
+
+    .link-agendar {
+        font-size: 1em;
+        display: inline;
     }
 }
