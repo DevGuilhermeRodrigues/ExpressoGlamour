@@ -111,86 +111,85 @@ html, body {
 
 .first_box_salao {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: 85%;
+    margin: 3em auto;
+}
+
+.box-description {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 25px;
+    width: 60%;
+    text-align: right;
+}
+
+.box-description-title {
+    color: #E53888;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.box-description-sub-title {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.first_box_salao img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.first_box_salao p {
+    font-size: 18px;
+}
+
+.seconde_box_salao {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     width: 85%;
-    margin: 2em auto;
+    margin: 3em auto;
 }
 
-.first_box_salao img {
-    width: 35%;
-    height: 80vh;
-    border-radius: 6px;
+.seconde_box_salao p {
+    font-size: 18px;
 }
 
-.first_box_salao p {
-    font-size: 20px;
-}
-
-.box_icons {
-    padding: 1em;
+.container-box {
     display: flex;
-    justify-content: first baseline;
-    align-items: center;
-    gap: 30px;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.icon {
-    font-size: 3em;
-    color: #E53888;
-    cursor: pointer;
-}
-
-.icon:hover {
-    color: black;
-}
-
-.container_card {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.card_box {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1em;
-  height: 35vh;
-  width: 45%;
-  background-color: #E53888;
-  border-radius: 4px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-.card_box p {
-    font-size: 20px;
-    font-weight: 200;
-
-}
-
-.icon-card {
-    font-size: 2.5em;
-    margin-bottom: .3em;
-    color: #ffffff;
-}
-
-.link-card {
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.container-box a {
+    background-color: #E53888;
+    width: fit-content;
+    padding: .6em 2em;
     color: white;
-    border: 1px solid;
-    padding: .4em 2em;
     border-radius: 4px;
-    text-align: center;
+    font-size: 20px;
+    border: 1px solid transparent;
 }
 
-.link-card:hover {
-    border: 1px solid black;
+.container-box a:hover {
+    /* background-color: #a1245e; */
+    color: black;
+    border: 1px solid;
+}
+
+.box_salao-img {
+    display: flex;
+    gap: 2em;
+}
+
+.box_salao-img img {
+    border-radius: 4px;
 }
 
 /* container card services */
@@ -258,7 +257,7 @@ html, body {
     font-size: 20px;
     background-color: #E53888;
     padding: .7em 2em;
-    color: black;
+    color: white;
     border-radius: 8px;
 }
 
