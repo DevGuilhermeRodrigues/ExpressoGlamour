@@ -635,6 +635,17 @@ footer span a {
     }
 }
 
+@media (max-width: 540px) {
+    
+    .container-principal {
+        margin-bottom: 0;
+        padding: 1em 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: fit-content;
+    }
+}
+
 
 @media (max-width: 450px) {
 
