@@ -219,7 +219,7 @@ html, body {
 }
 
 .card-services {
-    width: 40vh;
+    width: 35vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -240,6 +240,7 @@ html, body {
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 0 0 10px 10px;
+    text-align: center;
 }
 
 .card-services a {
@@ -327,7 +328,6 @@ footer span a {
 
   .box-conteudo {
     height: 60vh;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -674,7 +674,28 @@ footer span a {
         flex-direction: column;
     }
 
+    .image-salao {
+        width: fit-content;
+    }
+
     footer {
         font-size: 1em;
+    }
+}
+
+@media (max-width: 360px){
+    .logo {
+       font-size: 17px;
+    }
+
+    .first_box_salao img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .image-salao {
+        width: 100%;
+        height: 40vh;
+        padding: 0 5px;
     }
 }
