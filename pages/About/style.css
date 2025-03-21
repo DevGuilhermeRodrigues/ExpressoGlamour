@@ -47,7 +47,7 @@
 }
 
 .box-descricao-salão img {
-    height: 80vh;
+    height: 70vh;
     border-radius: 6px;
 }
 
@@ -105,6 +105,7 @@
 .container-imagens h2 {
     font-size: 2em;
     font-weight: 400;
+    margin: .5em 0;
 }
 
 .box-container-imagens {
@@ -119,4 +120,60 @@
     width: fit-content;
     width: 220px;
     height: 40vh;
+}
+
+/* Responsividade */
+
+@media (max-width: 880px) {
+ 
+   .container-imagens h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 915px) {
+
+    .box-descricao-salão img {
+        height: 60vh;
+    }
+
+    .box-container-imagens {
+        width: 70%;
+    }
+}
+
+@media (max-width: 750px) {
+    .container-salao h1 {
+        font-size: 1.5em;
+    }
+
+    .box-descricao-salão_text p {
+        font-size: 1.1em;
+    }
+
+    .container-equipe h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 680px) {
+    .box-descricao-salão {
+        flex-direction: column;
+    }
+
+    .box-descricao-salão_text a {
+        margin: 0 auto;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 620px) {
+    .card-equipe p {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .container-imagens h2{
+        text-align: center;
+    }
 }
