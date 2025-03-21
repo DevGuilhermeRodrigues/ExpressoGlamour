@@ -51,6 +51,47 @@
     border-radius: 6px;
 }
 
+/* Container equipe */
+
+.container-equipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-equipe h2 {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.box-equipe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0 1em;
+}
+
+.card-equipe {
+    width: 250px;
+}
+
+.card-equipe img {
+    height: 375px;
+}
+
+.card-equipe p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.card-equipe img {
+    width: 100%;
+}
+
 /* Container de imagens */
 .container-imagens {
     display: flex;
