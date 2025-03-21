@@ -75,7 +75,7 @@
 }
 
 .box-container-imagens img {
-    /* width: 250px; */
     width: fit-content;
+    width: 220px;
     height: 40vh;
 }
