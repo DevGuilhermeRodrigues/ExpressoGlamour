@@ -648,7 +648,6 @@ footer span a {
 
 
 @media (max-width: 450px) {
-
     .box-conteudo {
         padding: 0 10px;
     }
@@ -675,7 +674,7 @@ footer span a {
     }
 
     .image-salao {
-        width: fit-content;
+        width: 90%;
     }
 
     footer {
@@ -694,8 +693,6 @@ footer span a {
     }
 
     .image-salao {
-        /* width: 95%;
-        height: 40vh; */
         display: none;
     }
 
