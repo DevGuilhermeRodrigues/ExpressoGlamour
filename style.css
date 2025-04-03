@@ -668,6 +668,11 @@ footer span a {
 
     .container-box p {
         font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .container-box a {
+        margin-left: 10px;
     }
 
     .box_salao-img {
@@ -675,7 +680,7 @@ footer span a {
     }
 
     .image-salao {
-        width: 100%;
+        width: 90%;
         height: fit-content;
     }
 
