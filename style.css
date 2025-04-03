@@ -694,7 +694,12 @@ footer span a {
     }
 
     .image-salao {
-        width: 95%;
-        height: 40vh;
+        /* width: 95%;
+        height: 40vh; */
+        display: none;
+    }
+
+    .card-services {
+        width: 320px;
     }
 }
