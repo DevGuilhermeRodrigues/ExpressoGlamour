@@ -662,7 +662,8 @@ footer span a {
 
     /* container 1 salao*/
     .seconde_box_salao {
-        padding: 0 10px;
+        padding: 0 5px; 
+        width: 100%;
     }
 
     .container-box p {
@@ -674,7 +675,8 @@ footer span a {
     }
 
     .image-salao {
-        width: 90%;
+        width: 100%;
+        height: fit-content;
     }
 
     footer {
