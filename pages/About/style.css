@@ -108,18 +108,11 @@
     margin: .5em 0;
 }
 
-.box-container-imagens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+iframe {
     width: 50%;
-}
-
-.box-container-imagens img {
-    width: fit-content;
-    width: 220px;
-    height: 40vh;
+    height: 60vh;
+    border: 1px solid #E53888;
+    outline: none;
 }
 
 /* Responsividade */
@@ -165,6 +158,11 @@
         margin: 0 auto;
         font-size: 1em;
     }
+
+    iframe {
+        width: 80%;
+        height: 50vh;
+    }
 }
 
 @media (max-width: 620px) {
@@ -176,4 +174,5 @@
     .container-imagens h2{
         text-align: center;
     }
+
 }
